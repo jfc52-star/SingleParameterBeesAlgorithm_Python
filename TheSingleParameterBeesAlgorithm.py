@@ -1,3 +1,17 @@
+%___________________________________________________________________%
+%  The Single-parameter Bees Algorithm (BA1) source codes           %
+%  version 1.0                                                      %
+%                                                                   %
+%  Developed in Python 3.11.9                                       %
+%                                                                   %
+%  Programmer: Josh Cressall                                        %
+%  Authors: J. Cressall                                             %
+%         e-Mail: joshcressall2002@gmail.com                        %
+%                 jfc52@cam.ac.uk                                   %
+% Based on: https://doi.org/10.3390/biomimetics9100634              %
+%        by: H.F. Suluova and D.T. Pham                             %
+% __________________________________________________________________%
+
 import numpy as np
 import matplotlib.pyplot as plt
 import time
@@ -445,4 +459,5 @@ if __name__ == "__main__":
     avg_time = float(np.mean(run_times)) if run_times else None
     sd_time  = float(np.std(run_times))  if run_times else None
     print(f"Average run time: {avg_time:.4f} seconds")
+
     print(f"Standard deviation of run time: {sd_time:.4f} seconds")
